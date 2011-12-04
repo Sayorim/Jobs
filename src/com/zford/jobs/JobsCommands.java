@@ -173,7 +173,6 @@ public class JobsCommands implements CommandExecutor {
                     for(JobProgression jobProg: player.getJobsProgression()){
                         Job job = jobProg.getJob();
                         message += jobStatsMessage(jobProg);
-                        message += jobInfoMessage(player, job, "");
                         message += "----------------\n";
                     }
                     sendMessageByLine(sender, message);
